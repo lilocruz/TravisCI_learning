@@ -1,0 +1,21 @@
+{
+  "name": "travisci",
+  "version": "1.0.0",
+  "description": "Learning TravisCI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "author": "Michael Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "superset": "^2.0.1"
+  }
+}
