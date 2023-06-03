@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
-    res.status(200).json('Michael Sanchez Learning Travis!')  
+    res.status(200).json('Fusion is up & running!')  
 })
 
 // Exporting the home route so it can be tested

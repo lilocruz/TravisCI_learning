@@ -2,10 +2,10 @@ const request = require('supertest') //importing the supertest library
 const app = require('./index.js') //importing the 'index.js' file
 
 describe('Get route', () => {
-  it('page should return Michael Sanchez Learning Travis!', async () => {
+  it('page should return Fusion is up & running!', async () => {
     const res = await request(app).get('/')
     expect(res.statusCode).toEqual(200)
-    expect(res.body).toEqual('Michael Sanchez Learning Travis!')
+    expect(res.body).toEqual('Fusion is up & running!')
   })
 })
 
