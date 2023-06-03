@@ -18,8 +18,12 @@ install: # Hook provided by Travis CI
 script:
 - npm test
 
+
+# Deploy to heroku
+before_deploy:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
 deploy:
   provider: heroku
-  api_key:
-    secure: HEROKU_TOKEN
-  app: fusion-travis-ci
+  skip-cleanup: true
+  api_key: $HEROKU_TOKEN
+    app: fusion-travis-ci
